@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(63, 165, 165);
+    background-color: #1F2937;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -92,7 +92,10 @@ ul {
             }
             .top button {
                 margin-top: 4px;
-                background-color: lightblue;
+                background-color: #3882F6;
+                border-radius:5px;
+                color: white;
+                padding: 4px 15px;
             }
         .top .image {
             display: flex;
@@ -116,32 +119,33 @@ ul {
     align-items: center;
     gap: 20px;
 }
-.middle-top p {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 1000;
-    color:#1f2937;
-}
-.middle-top .cards {
-    display: flex;
-    gap:40px;
-}
-.card {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-.card img{
-    height: 150px;
-    width:150px;
-    border:2px solid blue;
-}
-.card p{
-    flex: 0 0 0;
-    width: 200px;
-    font-size: 14px;
-    font-weight:100;
-}
+    .middle-top p {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 1000;
+        color:#1f2937;
+    }
+    .middle-top .cards {
+        display: flex;
+        gap:40px;
+    }
+        .card {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+            .card img{
+                height: 150px;
+                width:150px;
+                border:2px solid #3882F6;
+                border-radius: 15px;
+            }
+            .card p{
+                flex: 0 0 0;
+                width: 200px;
+                font-size: 14px;
+                font-weight:100;
+            }
 
     /* middle-bot */
 .middle-bot {
@@ -155,22 +159,69 @@ ul {
     padding-bottom: 50px;
 
 }
-.middle-bot div {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    flex-wrap: wrap;
-}
-.middle-bot .quote {
-    font-size: 36px;
-    color: #1F2937;
-    text-emphasis: light;
-    align-self: flex-start;
-    padding-left: 25%;
+    .middle-bot div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+        .middle-bot .quote {
+            font-size: 36px;
+            color: #1F2937;
+            text-emphasis: light;
+            align-self: flex-start;
+            padding-left: 25%;
 
+        }
+        .middle-bot .quote_name {
+            font-weight: bold;
+            align-self: flex-end;
+            padding-right: 25%;
+        }
+
+    /* bottom */
+.bottom {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    padding: 50px 10px;
 }
-.middle-bot .quote_name {
-    font-weight: bold;
-    align-self: flex-end;
-    padding-right: 25%;
+    .bottom .centra {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #3882F6;
+        border-radius:10px;
+        margin-left: 17%;
+        margin-right: 17%;
+        flex: auto;
+        padding: 25px 0;
+        
+    }
+        .bottom .text {
+            flex-direction: column;
+            align-items: flex-start;
+            color: white;
+        }
+            .bottom p {
+                margin: 0;
+            }
+        .bottom button {
+            align-self: center;
+            border-radius:5px;
+            color: white;
+            padding: 4px 15px;
+            background-color: #3882F6;
+            border-color: white;
+        }
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 18px;
+    padding: 30px 0;
 }
